@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
+import { StarsCanvas } from "../components";
 import { staggerContainer } from "../utils/motion";
 
 const StarWrapper = (Component, idName) =>
@@ -18,7 +19,7 @@ const StarWrapper = (Component, idName) =>
         </span>
        
         <Component />
-      
+        <StarsCanvas/>
       </motion.section>
     );
   };
