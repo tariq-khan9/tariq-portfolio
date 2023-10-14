@@ -9,7 +9,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <Tilt className='xs:w-[200px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
@@ -20,12 +20,12 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[230px] flex justify-evenly items-center flex-col'
       >
         <img
           src={icon}
           alt='web-development'
-          className='w-16 h-16 object-contain'
+          className='w-14 h-14 object-contain'
         />
 
         <h3 className='text-white text-[20px] font-bold text-center'>
@@ -46,13 +46,9 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-justify text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I've accumulated more than three years of experience as a web developer, presently working in the public sector. My proficiency extends to <span className="text-gray-300">React.js</span>  and <span className="text-gray-300">Next.js</span> for front-end development, where I've employed <span className="text-gray-300">TailwindCSS</span>, <span className="text-gray-300">Bootstrap</span>, and <span className="text-gray-300">Material UI</span> to craft user interfaces. On the back end, my preferred tools are Next.js and <span className="text-gray-300">Laravel</span>. In earlier roles, I've successfully delivered projects leveraging Microsoft <span className="text-gray-300">.NET</span> technologies and <span className="text-gray-300">My SQL</span>. 
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
