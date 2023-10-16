@@ -95,7 +95,7 @@ const Contact = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='bg-tertiary rounded-xl mt-10 p-6 md:ml-8 w-[330px] md:w-[500px] flex flex-col gap-8'
+          className='bg-tertiary rounded-xl mt-10 p-6 md:ml-8 w-[280px] xs:w-[330px] md:w-[500px] flex flex-col gap-8'
         >
           <label className='flex flex-col'>
             <span className='text-white   font-medium mb-4'>Your Name</span>
@@ -139,10 +139,10 @@ const Contact = () => {
           </button>
         </form>
 
-        <div className="md:ml-9 mt-10 p-6 pt-7 w-[330px]  md:mb-1 rounded-xl md:w-[500px] md:mr-8 bg-tertiary">
+        <div className="md:ml-9 mt-10 p-6 pt-7 xs:w-[330px] w-[280px]  md:mb-1 rounded-xl md:w-[500px] md:mr-8 bg-tertiary">
           <div className="flex  flex-col ">
             <img className="mr-4" src={linkedin} width={38} height={38} alt="linkedin" />
-            <Link to="https://www.linkedin.com/in/tariq-khan-1877a5229/" className="mt-2 ml-2">https://www.linkedin.com/in/tariq-khan-1877a5229</Link>
+            <Link to="https://www.linkedin.com/in/tariq-khan-1877a5229/" className="mt-2 break-words ml-2">https://www.linkedin.com/in/tariq-khan-1877a5229</Link>
           </div>
 
           <div className="flex mt-7  flex-col ">
