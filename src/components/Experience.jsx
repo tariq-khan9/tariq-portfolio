@@ -1,4 +1,5 @@
 import React from "react";
+import { github } from "../assets";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -11,9 +12,11 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import { Link } from "react-router-dom";
 
 const ExperienceCard = ({ experience }) => {
   return (
+    
     <VerticalTimelineElement
       contentStyle={{
         background: "#1d1836",
@@ -32,8 +35,19 @@ const ExperienceCard = ({ experience }) => {
         </div>
       }
     >
-      <div>
-        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+
+      <div >
+        <img
+            src={experience.image}
+            alt='project_image'
+            className='w-full h-full object-cover rounded-2xl'
+          />
+          <div className="flex flex-row justify-between mt-4">
+           <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+           <Link to={experience.gitlink}>
+             <img width={40} height={40} src={github} alt="thjis"/>
+           </Link>
+        </div>
         <p
           className='text-secondary text-[16px] text-justify font-semibold'
           style={{ margin: 0 }}
@@ -42,7 +56,9 @@ const ExperienceCard = ({ experience }) => {
         </p>
       </div>
 
-      <ul className='mt-5 list-disc ml-5 space-y-2'>
+      <p className="text-white-100 text-justify  text-xs pl-1 tracking-wider">{experience.points}</p>
+
+      {/* <ul className='mt-5 list-disc ml-5 space-y-2'>
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
@@ -51,10 +67,13 @@ const ExperienceCard = ({ experience }) => {
             {point}
           </li>
         ))}
-      </ul>
+      </ul> */}
     </VerticalTimelineElement>
+  
   );
 };
+
+
 
 const Experience = () => {
   return (
@@ -71,11 +90,11 @@ const Experience = () => {
       <div className='mt-20 flex flex-col'>
         <VerticalTimeline>
           {experiences.map((experience, index) => (
-            <ExperienceCard
-              key={`experience-${index}`}
-              experience={experience}
-            />
-          ))}
+              <ExperienceCard
+                key={`experience-${index}`}
+                experience={experience}
+              />
+            ))}
         </VerticalTimeline>
       </div>
     </>

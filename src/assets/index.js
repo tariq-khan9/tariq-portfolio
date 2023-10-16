@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -7,6 +7,11 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+
+ import green from "./projects/green.jpg";
+ import mern2 from "./projects/mern2.jpg";
+ import tariq2 from "./projects/tariq2.jpg";
+ import tstore from "./projects/tstore.jpg";
 
 
 import css from "./tech/css.png";
@@ -26,6 +31,7 @@ import net from "./tech/net.png";
 import sqlserver from "./tech/sqlserver.png";
 import c from "./tech/c.png";
 import mysql from "./tech/mysql.png";
+import framer from "./tech/framer.png";
 
 
 
@@ -66,4 +72,10 @@ export {
   mysql,
   sqlserver,
   c,
+  framer,
+  green, 
+  mern2,
+  tstore,
+  tariq2,
+
 };

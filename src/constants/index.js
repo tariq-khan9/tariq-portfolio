@@ -11,6 +11,7 @@ import {
     nodejs,
     mongodb,
     git,
+    github,
     laravel,
     nextjs,
     reactjs,
@@ -24,6 +25,14 @@ import {
     c,
     mysql,
     sqlserver,
+    framer,
+    green,
+    mern2,
+    tstore,
+    tariq2,
+
+
+    
     
   } from "../assets";
   
@@ -130,6 +139,11 @@ import {
       icon: clerk,
       tip: "Clerk Authentication is a user authentication and identity management service that simplifies building secure and customizable authentication workflows for web and mobile applications.",
     },
+    {
+      name: "framer",
+      icon: framer,
+      tip: "Framer Motion is a JavaScript animation library for creating fluid and interactive web animations.",
+    },
     
     {
       name: "next auth",
@@ -164,46 +178,46 @@ import {
   const experiences = [
     {
       title: "Green-Messengers",
-      company_name: "",
+      image: green,
+      gitlink: "https://github.com/tariq-khan9/green-messengers",
       icon: nextjs,
       iconBg: "#EAE7E7",
       date: "Next.JS | TailwindCSS | MongoDB | Clerk-Auth ",
-      points: [
-        "The app functions primarily as a web-based platform with a blog-like interface, allowing users to register and log in through Clerk authentication.",
-        "Visitors can view posts related to a particular subject, such as green-world and are also able to search for posts by their content or author.",
-        "The app is deployed on Vercel. Feel free to access it at the following link: ",
-        "https://green-messengers.vercel.app ",
+      points: "This web-based platform with a blog-like interface enables user registration and login via Clerk authentication. Users can explore posts related to specific subjects and search for content or authors. The app is hosted on Vercel and accessible at https://green-messengers.vercel.app."
         
-      ],
+      
     },
     {
       title: "Daily Soldouts",
-      company_name: "",
+      image: mern2,
+      gitlink: "https://github.com/tariq-khan9/mern-soldout-app",
       icon: reactjs ,
       iconBg: "#242323",
       date: "MERN Stack | Chart.js",
-      points: [
-        "Daily Soldouts is a  web application meticulously crafted using the powerful MERN (MongoDB, Express.js, React, Node.js) stack.",
-        "It simplifies the task of recording and managing daily sold-out products with user-friendly interfaces. Also provides user registeration and authentication.",
-        " Effortlessly monitor  monthly sold-out product trends with visually appealing and easy-to-understand graphs. The application transforms complex data into clear, actionable insights.",
-        
-      ],
+      points: "Daily Soldouts is a MERN-based web application for managing daily sold-out products with user registration, authentication, and visualizing monthly trends through clear graphs, simplifying data analysis for efficient decision-making."
     },
     {
       title: "T-Stores",
-      //company_name: "Shopify",
+      gitlink: "https://github.com/tariq-khan9/tstore-ui",
+      image: tstore,
       icon: laravel,
       iconBg: "#EAE7E7",
       date: "Laravel | React.js | Material UI",
-      points: [
-        "T-Store is an online product showcase that brings an array of options to your fingertips, making it a one-stop destination for discovering, exploring, and acquiring an extensive assortment of products.",
-        "Seamlessly integrating ReactJS and Material UI for the frontend, and powered by the robust Laravel backend.",
-        "Includes a robust admin panel that provides comprehensive control over the application, allowing for efficient management.",
-        
-      ],
+      points: "T-Store is an online product showcase where users can  explore a diverse array of items. Its user-friendly interface, powered by ReactJS and Material UI, provided with robust functionality of its Laravel backend. Furthermore, the app includes an admin panel, facilitating effective application management."
+    },
+    {
+      title: "Tariq Portfolio",
+      image: tariq2,
+      gitlink: "https://github.com/tariq-khan9/tariq-portfolio",
+      icon: reactjs ,
+      iconBg: "#242323",
+      date: "React.JS | TailwindCSS | Framer-motion | Material UI",
+      points: "My portfolio website is a visually elegant platform highlighting my educational background, skillset, and professional experience. Constructed with React.js and enhanced by Tailwind CSS, it offers striking user interfaces. Framer Motion adds fluid and interactive web animations to create an engaging user experience."
     },
     
   ];
+
+ 
   
  
   

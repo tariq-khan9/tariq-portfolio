@@ -23,7 +23,7 @@ const Tech = () => {
   return (
     <>
          <motion.div variants={textVariant()} >
-        <p className="sm:text-[18px] text-center text-[14px] text-secondary uppercase tracking-wider">what i have used so far!</p>
+        <p className="sm:text-[18px] text-center text-[14px] text-secondary uppercase tracking-wider">what i have used so far</p>
         <h2 className="text-white text-center font-black md:text-[50px] sm:text-[40px] xs:text-[30px] text-[25px] mb-20">Technologies.</h2>
       </motion.div>
 
