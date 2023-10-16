@@ -43,20 +43,14 @@ const ExperienceCard = ({ experience }) => {
             className='w-full h-full object-cover rounded-2xl'
           />
           <div className="flex flex-row justify-between mt-4">
-           <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+           <h3 className='text-white text-[22px] font-bold'>{experience.title}</h3>
            <Link to={experience.gitlink}>
              <img width={40} height={40} src={github} alt="thjis"/>
            </Link>
         </div>
-        <p
-          className='text-secondary text-[16px] text-justify font-semibold'
-          style={{ margin: 0 }}
-        >
-          {experience.company_name}
-        </p>
       </div>
 
-      <p className="text-white-100 text-justify  text-xs pl-1 tracking-wider">{experience.points}</p>
+      <p className="text-white-100 text-justify  text-[12px] pl-1 tracking-wider">{experience.points}</p>
 
       {/* <ul className='mt-5 list-disc ml-5 space-y-2'>
         {experience.points.map((point, index) => (
@@ -78,16 +72,17 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      {/* <motion.div variants={textVariant()}> */}
         <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
           Work Experience.
         </h2>
-      </motion.div>
+      {/* </motion.div> */}
+    
 
-      <div className='mt-20 flex flex-col'>
+      <div className='mt-20 sm:px-20 md:px-28 lg:px-48 xl:px-24  flex flex-col'>
         <VerticalTimeline>
           {experiences.map((experience, index) => (
               <ExperienceCard

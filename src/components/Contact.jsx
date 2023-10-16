@@ -1,13 +1,16 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import { github, linkedin, gmail, phone, whatsapp } from "../assets";
+
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
-import { slideIn } from "../utils/motion";
+import { slideIn, zoomIn } from "../utils/motion";
 
 const Contact = () => {
   const formRef = useRef();
@@ -79,63 +82,92 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-row w-full">
-    <div
-      className={`xl:mt-12  flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
+    
+    <div className={`mt-12 bg-black-70 rounded-[20px]`}>
+     
       <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
+        variants={zoomIn( 0.2, 1)}
         className=' bg-black-100 p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
-
+        <p className="sm:text-[18px] ml-8  text-[14px] text-secondary uppercase tracking-wider">Get in touch</p>
+        <h3 className="text-white ml-8 font-black md:text-[45px] sm:text-[35px] xs:text-[25px] text-[20px]">Contact and Social links.</h3>
+        <div  className="flex lg:flex-row flex-col">
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
+          className='bg-tertiary rounded-xl mt-10 p-6 md:ml-8 w-[330px] md:w-[500px] flex flex-col gap-8'
         >
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
+            <span className='text-white   font-medium mb-4'>Your Name</span>
             <input
               type='text'
               name='name'
               value={form.name}
               onChange={handleChange}
               placeholder="What's your good name?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-black-100  py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
+            <span className='text-white   font-medium mb-4'>Your email</span>
             <input
               type='email'
               name='email'
               value={form.email}
               onChange={handleChange}
               placeholder="What's your web address?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-black-100  py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Message</span>
+            <span className='text-white   font-medium mb-4'>Your Message</span>
             <textarea
-              rows={7}
+              rows={5}
               name='message'
               value={form.message}
               onChange={handleChange}
               placeholder='What you want to say?'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-black-100 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
 
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            className='bg-black-100 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
           >
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
+
+        <div className="md:ml-9 mt-10 p-6 pt-7 w-[330px]  md:mb-1 rounded-xl md:w-[500px] md:mr-8 bg-tertiary">
+          <div className="flex  flex-col ">
+            <img className="mr-4" src={linkedin} width={38} height={38} alt="linkedin" />
+            <Link to="https://www.linkedin.com/in/tariq-khan-1877a5229/" className="mt-2 ml-2">https://www.linkedin.com/in/tariq-khan-1877a5229</Link>
+          </div>
+
+          <div className="flex mt-7  flex-col ">
+            <img className="mr-4" src={github} width={43} height={43} alt="github" />
+            <Link to="https://github.com/tariq-khan9" className="mt-1 ml-2">https://github.com/tariq-khan9</Link>
+          </div>
+
+          <div className="flex mt-8 flex-col ">
+            <img className="mr-4" src={gmail} width={40} height={40} alt="gmail" />
+            <p className="mt-2 ml-2">tariqkhan.cs9@gmail.com</p>
+          </div>
+
+          <div className="flex mt-8 flex-col ">
+            <img className="mr-4" src={phone} width={35} height={35} alt="phone" />
+            <p className="mt-2 ml-2">+92-314-9698996</p>
+          </div>
+
+          <div className="flex mt-7 flex-col ">
+            <img className="mr-3" src={whatsapp} width={40} height={40} alt="phone" />
+            <p className="mt-2 ml-2">+92-314-9698996</p>
+          </div>
+
+          
+        </div>
+        </div>
       </motion.div>
 
       
@@ -143,25 +175,9 @@ const Contact = () => {
       <ToastContainer position='bottom-center' closeOnClick={true} pauseOnHover={false} />
     </div>
  
-    <div
-      className={`xl:mt-12  flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
-      {/* <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className=' bg-black-100 p-8 rounded-2xl'
-      > */}
-        <p className={styles.sectionSubText}>REach me out</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
-
-        
-      {/* </motion.div> */}
-
-     
-      
-      
-    </div>
+   
     
-    </div>
+    
   );
 };
 

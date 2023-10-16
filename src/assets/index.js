@@ -13,6 +13,11 @@ import github from "./github.png";
  import tariq2 from "./projects/tariq2.jpg";
  import tstore from "./projects/tstore.jpg";
 
+ import gmail from "./contact/gmail.png";
+ import linkedin from "./contact/linkedin.png";
+ import phone from "./contact/phone.png";
+ import whatsapp from "./contact/whatsapp.png"
+
 
 import css from "./tech/css.png";
 import git from "./tech/git.png";
@@ -77,5 +82,9 @@ export {
   mern2,
   tstore,
   tariq2,
+  gmail,
+  linkedin,
+  phone,
+  whatsapp
 
 };

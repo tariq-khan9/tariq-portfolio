@@ -36,10 +36,10 @@ const Tech = () => {
         <div className='flex flex-row flex-wrap justify-center gap-10'>
         
           {technologies.map((technology) => (
-            <div className='w-28 h-28' key={technology.name}>
+            <div className='w-28 h-24' key={technology.name}>
               <Tilt>
                   <LightTooltip  title={technology.tip} placement="top" arrow>
-                  <img width={250} height={250}  src={technology.icon} alt="icon"/>
+                  <img width={80} height={80}  src={technology.icon} alt="icon"/>
                   </LightTooltip>
               </Tilt>
             </div>
