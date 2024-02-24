@@ -48,7 +48,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-justify text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I've accumulated more than three years of experience as a web developer, presently working in the public sector. My proficiency extends to <span className="text-gray-300">React.js</span>  and <span className="text-gray-300">Next.js</span> for front-end development, where I've employed <span className="text-gray-300">TailwindCSS</span>, <span className="text-gray-300">Bootstrap</span>, and <span className="text-gray-300">Material UI</span> to craft user interfaces. On the back end, my preferred tools are Next.js and <span className="text-gray-300">Laravel</span>. In earlier roles, I've successfully delivered projects leveraging Microsoft <span className="text-gray-300">.NET</span> technologies and <span className="text-gray-300">My SQL</span>. 
+        I've accumulated more than three years of experience as a fullstack web developer. My proficiency extends to <span className="text-gray-300">React.js</span>  and <span className="text-gray-300">Next.js</span> for front-end development, where I've employed <span className="text-gray-300">TailwindCSS</span>, <span className="text-gray-300">Bootstrap</span>, and <span className="text-gray-300">Material UI</span> to craft user interfaces. On the back end, my preferred tools are Next.js and <span className="text-gray-300">Laravel</span>. In earlier roles, I've successfully delivered projects leveraging Microsoft <span className="text-gray-300">.NET</span> technologies and <span className="text-gray-300">My SQL</span>. 
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
