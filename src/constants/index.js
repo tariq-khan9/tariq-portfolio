@@ -30,6 +30,7 @@ import {
     mern2,
     tstore,
     tariq2,
+    simple
 
 
     
@@ -176,6 +177,16 @@ import {
   ];
   
   const experiences = [
+    {
+      title: "Simplest-Math",
+      image: simple,
+      gitlink: "https://github.com/tariq-khan9/simple-math",
+      icon: reactjs,
+      iconBg: "#EAE7E7",
+      date: "React.JS | TailwindCSS | Express.JS | Postgres ",
+      points: "SimplestMath is an online platform designed for math practice and learning. It offers practice sheets covering key math topics such as arithmetic, fractions, algebra, and geometry. While still in progress, you can explore the application at https://simplestmath.com/."
+      
+    },
     {
       title: "Green-Messengers",
       image: green,
