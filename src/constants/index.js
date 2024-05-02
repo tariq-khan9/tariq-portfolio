@@ -30,7 +30,7 @@ import {
     mern2,
     tstore,
     tariq2,
-    simple
+    simple,
 
 
     
