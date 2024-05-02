@@ -182,7 +182,7 @@ import {
       image: simple,
       gitlink: "https://github.com/tariq-khan9/simple-math",
       icon: reactjs,
-      iconBg: "#EAE7E7",
+      iconBg: "#242323",
       date: "React.JS | TailwindCSS | Express.JS | Postgres ",
       points: "SimplestMath is an online platform designed for math practice and learning. It offers practice sheets covering key math topics such as arithmetic, fractions, algebra, and geometry. While still in progress, you can explore the application at https://simplestmath.com/."
       
