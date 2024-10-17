@@ -98,11 +98,20 @@ import {
       tip: "Next.js is a popular open-source React framework for building server-rendered web applications with a focus on performance and developer experience.",
     },
     {
+      name: "graphql",
+      icon: graphql,
+      tip: "GraphQL is an API query language that lets clients request only the data they need, optimizing data fetching.",
+    },
+    {
+      name: "strapi",
+      icon: strapi,
+      tip: "Strapi is an open-source headless CMS that lets developers easily manage and deliver content via customizable APIs.",
+    },
+    {
       name: "laravel",
       icon: laravel,
       tip: "Laravel is a widely-used open-source PHP web application framework known for its elegant syntax and tools for building modern web applications.",
     },
-   
     {
       name: "Tailwind CSS",
       icon: tailwind,
