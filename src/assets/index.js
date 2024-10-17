@@ -14,6 +14,7 @@ import github from "./github.png";
  import tstore from "./projects/tstore.jpg";
  import simple from "./projects/simple.png";
  import insights from "./projects/insights.png";
+ import gisto from "./projects/gisto.png"
 
  import gmail from "./contact/gmail.png";
  import linkedin from "./contact/linkedin.png";
@@ -97,6 +98,7 @@ export {
  graphql,
  insights,
  python,
- typescript
+ typescript,
+ gisto
 
 };

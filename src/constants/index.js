@@ -35,7 +35,8 @@ import {
     strapi,
     insights,
     python,
-    typescript
+    typescript,
+    gisto
 
 
     
@@ -202,20 +203,30 @@ import {
   
   const experiences = [
     {
+      title: "Gistoscope",
+      image: gisto,
+      gitlink: "https://github.com/tariq-khan9/gistoscope",
+      icon: graphql,
+      iconBg: "#242323",
+      date: "React.JS | Graphql | Apollo Server | Postgres ",
+      points: "Gistoscope is an online social forum (in-progress) where users can browse, create, critique, edit posts, and start discussions based on specific parts of others' writings."
+      
+    },
+    {
       title: "Simplest-Math",
       image: simple,
       gitlink: "https://github.com/tariq-khan9/simple-math",
       icon: reactjs,
       iconBg: "#242323",
       date: "React.JS | TailwindCSS | Express.JS | Postgres ",
-      points: "SimplestMath is an online platform designed for math practice and learning. It offers practice sheets covering key math topics such as arithmetic, fractions, algebra, and geometry. While still in progress, you can explore the application at https://simplestmath.com/."
+      points: "SimplestMath is an online platform designed for math practice and learning. It offers practice sheets covering key math topics such as arithmetic, fractions, algebra, and geometry. you can explore the application at https://simplestmath.com/."
       
     },
     {
       title: "Read-Insights",
       image: insights,
       gitlink: "https://github.com/tariq-khan9/react-insights",
-      icon: graphql,
+      icon: strapi,
       iconBg: "#242323",
       date: "React.JS | TailwindCSS | Graphql | Strapi | Postgres ",
       points: "A blog platform using React.js, Graphql, Strapi-5, and PostgreSQL. It allows authors to create, manage, and delete rich text posts, while visitors can browse by category, author, or view recent posts. "
