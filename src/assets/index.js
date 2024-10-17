@@ -41,6 +41,7 @@ import mysql from "./tech/mysql.png";
 import framer from "./tech/framer.png";
 import strapi from "./tech/strapi.png";
 import graphql from "./tech/graphql.png";
+import python from "./tech/python.png";
 
 
 
@@ -93,6 +94,7 @@ export {
   simple,
   strapi,
  graphql,
- strapi2
+ strapi2,
+ python
 
 };
