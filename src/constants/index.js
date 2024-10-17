@@ -199,6 +199,16 @@ import {
       
     },
     {
+      title: "Read-Insights",
+      image: insights,
+      gitlink: "https://github.com/tariq-khan9/simple-math",
+      icon: graphql,
+      iconBg: "#242323",
+      date: "React.JS | TailwindCSS | Graphql | Strapi | Postgres ",
+      points: "A blog platform using React.js,Graphql , Strapi 5, and PostgreSQL. It allows authors to create, manage, and delete rich text posts, while visitors can browse by category, author, or view recent posts. "
+      
+    },
+    {
       title: "Green-Messengers",
       image: green,
       gitlink: "https://github.com/tariq-khan9/green-messengers",
