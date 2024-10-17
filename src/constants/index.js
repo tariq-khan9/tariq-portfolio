@@ -33,7 +33,8 @@ import {
     simple,
     graphql,
     strapi,
-    strapi2
+    strapi2,
+    python
 
 
     
@@ -99,6 +100,11 @@ import {
       name: "next js",
       icon: nextjs,
       tip: "Next.js is a popular open-source React framework for building server-rendered web applications with a focus on performance and developer experience.",
+    },
+    {
+      name: "Python",
+      icon: python,
+      tip: "Python is a versatile, high-level programming language known for its readability and broad usage in web development, data science, and automation.",
     },
     {
       name: "graphql",
