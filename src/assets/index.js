@@ -13,6 +13,7 @@ import github from "./github.png";
  import tariq2 from "./projects/tariq2.jpg";
  import tstore from "./projects/tstore.jpg";
  import simple from "./projects/simple.png";
+ import strapi2 from "./projects/strapi2.png";
 
  import gmail from "./contact/gmail.png";
  import linkedin from "./contact/linkedin.png";
@@ -91,6 +92,7 @@ export {
   whatsapp,
   simple,
   strapi,
- graphql
+ graphql,
+ strapi2
 
 };
