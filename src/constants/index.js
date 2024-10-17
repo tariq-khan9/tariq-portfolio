@@ -202,7 +202,7 @@ import {
     {
       title: "Read-Insights",
       image: strapi2,
-      gitlink: "https://github.com/tariq-khan9/simple-math",
+      gitlink: "https://github.com/tariq-khan9/react-insights",
       icon: graphql,
       iconBg: "#242323",
       date: "React.JS | TailwindCSS | Graphql | Strapi | Postgres ",
