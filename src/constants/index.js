@@ -32,7 +32,8 @@ import {
     tariq2,
     simple,
     graphql,
-    strapi
+    strapi,
+    strapi2
 
 
     
@@ -200,7 +201,7 @@ import {
     },
     {
       title: "Read-Insights",
-      image: insights,
+      image: strapi2,
       gitlink: "https://github.com/tariq-khan9/simple-math",
       icon: graphql,
       iconBg: "#242323",
