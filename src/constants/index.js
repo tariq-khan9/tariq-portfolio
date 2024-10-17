@@ -31,6 +31,8 @@ import {
     tstore,
     tariq2,
     simple,
+    graphql,
+    strapi
 
 
     
