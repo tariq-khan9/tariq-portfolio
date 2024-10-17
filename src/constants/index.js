@@ -33,8 +33,9 @@ import {
     simple,
     graphql,
     strapi,
-    strapi2,
-    python
+    insights,
+    python,
+    typescript
 
 
     
@@ -90,6 +91,11 @@ import {
       name: "JavaScript",
       icon: javascript,
       tip: "JavaScript is a versatile, high-level programming language used for adding interactivity and dynamic behavior to websites.",
+    },
+    {
+      name: "TypeScript",
+      icon: typescript,
+      tip: "TypeScript is a superset of JavaScript that adds static types, enhancing code quality, and making development more predictable and scalable.",
     },
     {
       name: "React JS",
@@ -207,12 +213,12 @@ import {
     },
     {
       title: "Read-Insights",
-      image: strapi2,
+      image: insights,
       gitlink: "https://github.com/tariq-khan9/react-insights",
       icon: graphql,
       iconBg: "#242323",
       date: "React.JS | TailwindCSS | Graphql | Strapi | Postgres ",
-      points: "A blog platform using React.js,Graphql , Strapi 5, and PostgreSQL. It allows authors to create, manage, and delete rich text posts, while visitors can browse by category, author, or view recent posts. "
+      points: "A blog platform using React.js, Graphql, Strapi-5, and PostgreSQL. It allows authors to create, manage, and delete rich text posts, while visitors can browse by category, author, or view recent posts. "
       
     },
     {

@@ -13,7 +13,7 @@ import github from "./github.png";
  import tariq2 from "./projects/tariq2.jpg";
  import tstore from "./projects/tstore.jpg";
  import simple from "./projects/simple.png";
- import strapi2 from "./projects/strapi2.png";
+ import insights from "./projects/insights.png";
 
  import gmail from "./contact/gmail.png";
  import linkedin from "./contact/linkedin.png";
@@ -42,6 +42,7 @@ import framer from "./tech/framer.png";
 import strapi from "./tech/strapi.png";
 import graphql from "./tech/graphql.png";
 import python from "./tech/python.png";
+import typescript from "./tech/typescript.png";
 
 
 
@@ -94,7 +95,8 @@ export {
   simple,
   strapi,
  graphql,
- strapi2,
- python
+ insights,
+ python,
+ typescript
 
 };
