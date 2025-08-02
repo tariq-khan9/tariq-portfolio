@@ -99,6 +99,6 @@ export {
   python,
   typescript,
   gisto,
-  sts,
   astro,
+  sts,
 };
