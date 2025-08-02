@@ -204,9 +204,9 @@ const experiences = [
   {
     title: "STS-Maintenance",
     image: sts,
-    gitlink: "https://stsmaintenance.com",
+    gitlink: "https://gitlab.com/smlogic/sts-web",
     icon: astro,
-    iconBg: "#242323",
+    iconBg: "#EAE7E7",
     date: "Astro | React.JS | Tailwindcss ",
     points:
       "STS-Maintenance is a website that highlights various cleaning and maintenance services. It is built using Astro to optimize SEO, with React integrated for dynamic components.",

@@ -7,6 +7,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import gitlab from "./gitlab.png";
 
 import green from "./projects/green.jpg";
 import mern2 from "./projects/mern2.jpg";
@@ -15,7 +16,7 @@ import tstore from "./projects/tstore.jpg";
 import simple from "./projects/simple.png";
 import insights from "./projects/insights.png";
 import gisto from "./projects/gisto.png";
-import sts from "./projects/sts.JPG";
+import sts from "./projects/sts.jpg";
 
 import gmail from "./contact/gmail.png";
 import linkedin from "./contact/linkedin.png";
@@ -60,6 +61,7 @@ export {
   mobile,
   web,
   github,
+  gitlab,
   css,
   git,
   html,

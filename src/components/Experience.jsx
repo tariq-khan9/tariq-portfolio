@@ -1,5 +1,5 @@
-import React from "react";
-import { github } from "../assets";
+import React, { useState } from "react";
+import { github, gitlab } from "../assets";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -15,8 +15,11 @@ import { textVariant } from "../utils/motion";
 import { Link } from "react-router-dom";
 
 const ExperienceCard = ({ experience }) => {
+  let isGitHub = true;
+
+  if (experience.title === "STS-Maintenance") isGitHub = false;
+
   return (
-    
     <VerticalTimelineElement
       contentStyle={{
         background: "#1d1836",
@@ -26,31 +29,39 @@ const ExperienceCard = ({ experience }) => {
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
-        <div className='flex justify-center items-center w-full h-full'>
+        <div className="flex justify-center items-center w-full h-full">
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className='w-[60%] h-[60%] object-contain'
+            className="w-[60%] h-[60%] object-contain"
           />
         </div>
       }
     >
-
-      <div >
+      <div>
         <img
-            src={experience.image}
-            alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
-          />
-          <div className="flex flex-row justify-between mt-4">
-           <h3 className='text-white text-[22px] font-bold'>{experience.title}</h3>
-           <Link to={experience.gitlink}>
-             <img width={40} height={40} src={github} alt="thjis"/>
-           </Link>
+          src={experience.image}
+          alt="project_image"
+          className="w-full h-full object-cover rounded-2xl"
+        />
+        <div className="flex flex-row justify-between mt-4">
+          <h3 className="text-white text-[22px] font-bold">
+            {experience.title}
+          </h3>
+          <Link to={experience.gitlink}>
+            <img
+              width={40}
+              height={40}
+              src={isGitHub ? github : gitlab}
+              alt="thjis"
+            />
+          </Link>
         </div>
       </div>
 
-      <p className="text-white-100 text-justify  text-[12px] pl-1 tracking-wider">{experience.points}</p>
+      <p className="text-white-100 text-justify  text-[12px] pl-1 tracking-wider">
+        {experience.points}
+      </p>
 
       {/* <ul className='mt-5 list-disc ml-5 space-y-2'>
         {experience.points.map((point, index) => (
@@ -63,33 +74,29 @@ const ExperienceCard = ({ experience }) => {
         ))}
       </ul> */}
     </VerticalTimelineElement>
-  
   );
 };
-
-
 
 const Experience = () => {
   return (
     <>
       {/* <motion.div variants={textVariant()}> */}
-        <p className={`${styles.sectionSubText} text-center`}>
-          What I have done so far
-        </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
-          Work Experience.
-        </h2>
+      <p className={`${styles.sectionSubText} text-center`}>
+        What I have done so far
+      </p>
+      <h2 className={`${styles.sectionHeadText} text-center`}>
+        Work Experience.
+      </h2>
       {/* </motion.div> */}
-    
 
-      <div className='mt-20 sm:px-20 md:px-28 lg:px-48 xl:px-24  flex flex-col'>
+      <div className="mt-20 sm:px-20 md:px-28 lg:px-48 xl:px-24  flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
-              <ExperienceCard
-                key={`experience-${index}`}
-                experience={experience}
-              />
-            ))}
+            <ExperienceCard
+              key={`experience-${index}`}
+              experience={experience}
+            />
+          ))}
         </VerticalTimeline>
       </div>
     </>
