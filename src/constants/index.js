@@ -38,6 +38,7 @@ import {
   typescript,
   gisto,
   astro,
+  sts,
 } from "../assets";
 
 export const navLinks = [
@@ -202,7 +203,7 @@ const technologies = [
 const experiences = [
   {
     title: "STS-Maintenance",
-    image: gisto,
+    image: sts,
     gitlink: "https://gitlab.com/smlogic/sts-web",
     icon: astro,
     iconBg: "#EAE7E7",
