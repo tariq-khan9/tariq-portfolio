@@ -16,7 +16,7 @@ import tstore from "./projects/tstore.jpg";
 import simple from "./projects/simple.png";
 import insights from "./projects/insights.png";
 import gisto from "./projects/gisto.png";
-import sts from "./projects/sts.jpg";
+import sts2 from "./projects/sts2.PNG";
 
 import gmail from "./contact/gmail.png";
 import linkedin from "./contact/linkedin.png";
@@ -100,5 +100,5 @@ export {
   typescript,
   gisto,
   astro,
-  sts,
+  sts2,
 };

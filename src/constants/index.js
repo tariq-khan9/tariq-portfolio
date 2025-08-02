@@ -37,7 +37,7 @@ import {
   python,
   typescript,
   gisto,
-  sts,
+  sts2,
   astro,
 } from "../assets";
 
@@ -203,7 +203,7 @@ const technologies = [
 const experiences = [
   {
     title: "STS-Maintenance",
-    image: sts,
+    image: sts2,
     gitlink: "https://gitlab.com/smlogic/sts-web",
     icon: astro,
     iconBg: "#EAE7E7",
