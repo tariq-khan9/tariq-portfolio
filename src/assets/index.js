@@ -8,19 +8,19 @@ import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
 
- import green from "./projects/green.jpg";
- import mern2 from "./projects/mern2.jpg";
- import tariq2 from "./projects/tariq2.jpg";
- import tstore from "./projects/tstore.jpg";
- import simple from "./projects/simple.png";
- import insights from "./projects/insights.png";
- import gisto from "./projects/gisto.png"
+import green from "./projects/green.jpg";
+import mern2 from "./projects/mern2.jpg";
+import tariq2 from "./projects/tariq2.jpg";
+import tstore from "./projects/tstore.jpg";
+import simple from "./projects/simple.png";
+import insights from "./projects/insights.png";
+import gisto from "./projects/gisto.png";
+import sts from "./projects/sts.JPG";
 
- import gmail from "./contact/gmail.png";
- import linkedin from "./contact/linkedin.png";
- import phone from "./contact/phone.png";
- import whatsapp from "./contact/whatsapp.png"
-
+import gmail from "./contact/gmail.png";
+import linkedin from "./contact/linkedin.png";
+import phone from "./contact/phone.png";
+import whatsapp from "./contact/whatsapp.png";
 
 import css from "./tech/css.png";
 import git from "./tech/git.png";
@@ -44,15 +44,12 @@ import strapi from "./tech/strapi.png";
 import graphql from "./tech/graphql.png";
 import python from "./tech/python.png";
 import typescript from "./tech/typescript.png";
-
-
+import astro from "./tech/astro.png";
 
 import nextjs from "./company/nextjs.png";
 import reactjs from "./company/reactjs.svg";
 import laravel from "./company/laravel.svg";
 import mern from "./company/mern.png";
-
-
 
 export {
   logo,
@@ -85,7 +82,7 @@ export {
   sqlserver,
   c,
   framer,
-  green, 
+  green,
   mern2,
   tstore,
   tariq2,
@@ -95,10 +92,11 @@ export {
   whatsapp,
   simple,
   strapi,
- graphql,
- insights,
- python,
- typescript,
- gisto
-
+  graphql,
+  insights,
+  python,
+  typescript,
+  gisto,
+  astro,
+  sts,
 };
