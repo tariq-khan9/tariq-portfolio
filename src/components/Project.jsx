@@ -9,15 +9,15 @@ import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
-import { experiences } from "../constants";
+import { projects } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 import { Link } from "react-router-dom";
 
-const ExperienceCard = ({ experience }) => {
+const ProjectCard = ({ projects }) => {
   let isGitHub = true;
 
-  if (experience.title === "STS-Maintenance") isGitHub = false;
+  if (projects.title === "STS-Maintenance") isGitHub = false;
 
   return (
     <VerticalTimelineElement
@@ -26,13 +26,13 @@ const ExperienceCard = ({ experience }) => {
         color: "#fff",
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-      date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
+      date={projects.date}
+      iconStyle={{ background: projects.iconBg }}
       icon={
         <div className="flex justify-center items-center w-full h-full">
           <img
-            src={experience.icon}
-            alt={experience.company_name}
+            src={projects.icon}
+            alt={projects.company_name}
             className="w-[60%] h-[60%] object-contain"
           />
         </div>
@@ -40,15 +40,13 @@ const ExperienceCard = ({ experience }) => {
     >
       <div>
         <img
-          src={experience.image}
+          src={projects.image}
           alt="project_image"
           className="w-full h-full object-cover rounded-2xl"
         />
         <div className="flex flex-row justify-between mt-4">
-          <h3 className="text-white text-[22px] font-bold">
-            {experience.title}
-          </h3>
-          <Link to={experience.gitlink}>
+          <h3 className="text-white text-[22px] font-bold">{projects.title}</h3>
+          <Link to={projects.gitlink}>
             <img
               width={40}
               height={40}
@@ -60,13 +58,13 @@ const ExperienceCard = ({ experience }) => {
       </div>
 
       <p className="text-white-100 text-justify  text-[12px] pl-1 tracking-wider">
-        {experience.points}
+        {projects.points}
       </p>
 
       {/* <ul className='mt-5 list-disc ml-5 space-y-2'>
-        {experience.points.map((point, index) => (
+        {projects.points.map((point, index) => (
           <li
-            key={`experience-point-${index}`}
+            key={`projects-point-${index}`}
             className='text-white-100  text-[14px] pl-1 tracking-wider'
           >
             {point}
@@ -77,7 +75,7 @@ const ExperienceCard = ({ experience }) => {
   );
 };
 
-const Experience = () => {
+const Projects = () => {
   return (
     <>
       {/* <motion.div variants={textVariant()}> */}
@@ -91,11 +89,8 @@ const Experience = () => {
 
       <div className="mt-20 sm:px-20 md:px-28 lg:px-48 xl:px-24  flex flex-col">
         <VerticalTimeline>
-          {experiences.map((experience, index) => (
-            <ExperienceCard
-              key={`experience-${index}`}
-              experience={experience}
-            />
+          {projects.map((projects, index) => (
+            <ProjectCard key={`projects-${index}`} projects={projects} />
           ))}
         </VerticalTimeline>
       </div>
@@ -103,4 +98,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Projects, "work");

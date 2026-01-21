@@ -58,15 +58,15 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full Stack Web Developer",
     icon: web,
   },
   {
-    title: "React.js Next.js  Developer",
+    title: "React & Next.js Specialist",
     icon: mobile,
   },
   {
-    title: "Frontend Developer",
+    title: "Frontend Engineer",
     icon: creator,
   },
   {
@@ -202,6 +202,38 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Freelance Full Stack Web Developer",
+    image: sts,
+
+    icon: astro,
+    iconBg: "#EAE7E7",
+    date: ["Upwork, Guru | Remote ", "2021 – Present"],
+    points: [
+      "•	Delivered end-to-end web applications for international clients across real estate, SaaS, and   content platforms.",
+      "•	Specialized in React.js, Next.js, Tailwind CSS, Node.js, and PostgreSQL.",
+      "•	Maintained strong client satisfaction through clear communication, timely delivery, and high-quality code.",
+      "•	Built scalable frontends, designed APIs, and integrated third-party services.",
+    ],
+  },
+  {
+    title: "Next.js Developer (Remote)",
+    image: gisto,
+
+    icon: graphql,
+    iconBg: "#242323",
+    date: ["Void Zero Technologies, Islamabad", "May 2024 – March 2025"],
+    points: [
+      "•	Developed pixel-perfect, responsive user interfaces using Next.js, React, and Tailwind CSS based on Figma designs.",
+      "•	Implemented Redux-based state management to improve application scalability and performance.",
+      "•	Collaborated with cross-functional remote teams to deliver features for a large-scale real estate and mortgage platform.",
+      "•	Conducted code reviews and mentored junior developers, improving overall code quality and team efficiency.",
+      "•	Contributed to a production platform managing real estate listings, property management, mortgages, and insurance.",
+    ],
+  },
+];
+
+const projects = [
+  {
     title: "STS-Maintenance",
     image: sts,
     gitlink: "https://gitlab.com/smlogic/sts-web",
@@ -282,5 +314,4 @@ const experiences = [
       "My portfolio website is a visually elegant platform highlighting my educational background, skillset, and professional experience. Constructed with React.js and enhanced by Tailwind CSS, it offers striking user interfaces. Framer Motion adds fluid and interactive web animations to create an engaging user experience.",
   },
 ];
-
-export { services, technologies, experiences };
+export { services, technologies, projects, experiences };
