@@ -1,24 +1,18 @@
-import React, { useState } from "react";
 import { github, gitlab } from "../assets";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
 
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
-import { projects } from "../constants";
+import { experience } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 import { Link } from "react-router-dom";
 
-const ProjectCard = ({ projects }) => {
-  let isGitHub = true;
-
-  if (projects.title === "STS-Maintenance") isGitHub = false;
-
+const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -26,13 +20,15 @@ const ProjectCard = ({ projects }) => {
         color: "#fff",
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-      date={projects.date}
-      iconStyle={{ background: projects.iconBg }}
+      date={experience.date.map((text) => (
+        <div>{text}</div>
+      ))}
+      iconStyle={{ background: experience.iconBg }}
       icon={
         <div className="flex justify-center items-center w-full h-full">
           <img
-            src={projects.icon}
-            alt={projects.company_name}
+            src={experience.icon}
+            alt={experience.company_name}
             className="w-[60%] h-[60%] object-contain"
           />
         </div>
@@ -40,31 +36,29 @@ const ProjectCard = ({ projects }) => {
     >
       <div>
         <img
-          src={projects.image}
+          src={experience.image}
           alt="project_image"
           className="w-full h-full object-cover rounded-2xl"
         />
         <div className="flex flex-row justify-between mt-4">
-          <h3 className="text-white text-[22px] font-bold">{projects.title}</h3>
-          <Link to={projects.gitlink}>
-            <img
-              width={40}
-              height={40}
-              src={isGitHub ? github : gitlab}
-              alt="thjis"
-            />
-          </Link>
+          <h3 className="text-white text-[22px] font-bold">
+            {experience.title}
+          </h3>
         </div>
       </div>
 
-      <p className="text-white-100 text-justify  text-[12px] pl-1 tracking-wider">
-        {projects.points}
-      </p>
+      <ul className="text-white-100 text-justify text-[18px] pl-4 list-disc tracking-wider">
+        {experience.points.map((text, index) => (
+          <li key={index} className="mb-1">
+            {text}
+          </li>
+        ))}
+      </ul>
 
       {/* <ul className='mt-5 list-disc ml-5 space-y-2'>
-        {projects.points.map((point, index) => (
+        {experience.points.map((point, index) => (
           <li
-            key={`projects-point-${index}`}
+            key={`experience-point-${index}`}
             className='text-white-100  text-[14px] pl-1 tracking-wider'
           >
             {point}
@@ -75,20 +69,25 @@ const ProjectCard = ({ projects }) => {
   );
 };
 
-const Projects = () => {
+const Experience = () => {
   return (
     <>
       {/* <motion.div variants={textVariant()}> */}
       <p className={`${styles.sectionSubText} text-center`}>
-        Some of my builds so far
+        What I have done so far
       </p>
-      <h2 className={`${styles.sectionHeadText} text-center`}>Projects.</h2>
+      <h2 className={`${styles.sectionHeadText} text-center`}>
+        Work Experience.
+      </h2>
       {/* </motion.div> */}
 
-      <div className="mt-20 sm:px-20 md:px-28 lg:px-48 xl:px-24  flex flex-col">
+      <div className="mt-20 sm:px-6 md:px-10 lg:px-0  flex flex-col">
         <VerticalTimeline>
-          {projects.map((projects, index) => (
-            <ProjectCard key={`projects-${index}`} projects={projects} />
+          {experience.map((experience, index) => (
+            <ExperienceCard
+              key={`experience-${index}`}
+              experience={experience}
+            />
           ))}
         </VerticalTimeline>
       </div>
@@ -96,4 +95,4 @@ const Projects = () => {
   );
 };
 
-export default SectionWrapper(Projects, "work");
+export default SectionWrapper(Experience, "Experience");

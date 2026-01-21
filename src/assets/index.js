@@ -46,11 +46,16 @@ import graphql from "./tech/graphql.png";
 import python from "./tech/python.png";
 import typescript from "./tech/typescript.png";
 import astro from "./tech/astro.png";
+import postgres from "./tech/postgres.png";
 
 import nextjs from "./company/nextjs.png";
 import reactjs from "./company/reactjs.svg";
 import laravel from "./company/laravel.svg";
 import mern from "./company/mern.png";
+
+import upworklogo from "./experience/upwork-logo.png";
+import upwork from "./experience/upwork.jpg";
+import allen from "./experience/allen.jpg";
 
 export {
   logo,
@@ -101,4 +106,8 @@ export {
   gisto,
   astro,
   sts,
+  upwork,
+  upworklogo,
+  allen,
+  postgres,
 };

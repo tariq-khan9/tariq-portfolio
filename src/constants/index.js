@@ -39,6 +39,10 @@ import {
   gisto,
   astro,
   sts,
+  upwork,
+  upworklogo,
+  allen,
+  postgres,
 } from "../assets";
 
 export const navLinks = [
@@ -76,16 +80,16 @@ const services = [
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-    tip: "HTML5 is the latest version of the Hypertext Markup Language, used for structuring and presenting content on the web.",
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-    tip: "CSS3 is the latest version of Cascading Style Sheets, a technology used for styling the presentation of web pages.",
-  },
+  // {
+  //   name: "HTML 5",
+  //   icon: html,
+  //   tip: "HTML5 is the latest version of the Hypertext Markup Language, used for structuring and presenting content on the web.",
+  // },
+  // {
+  //   name: "CSS 3",
+  //   icon: css,
+  //   tip: "CSS3 is the latest version of Cascading Style Sheets, a technology used for styling the presentation of web pages.",
+  // },
   {
     name: "JavaScript",
     icon: javascript,
@@ -178,56 +182,56 @@ const technologies = [
     icon: next,
     tip: "Next-Auth is a popular open-source authentication library for Next.js applications, providing features for user authentication and session management.",
   },
+  // {
+  //   name: "git",
+  //   icon: git,
+  //   tip: "Git is a distributed version control system used for tracking changes in source code during software development.",
+  // },
   {
-    name: "git",
-    icon: git,
-    tip: "Git is a distributed version control system used for tracking changes in source code during software development.",
-  },
-  {
-    name: "net",
-    icon: net,
-    tip: "The .NET Framework is a software framework developed by Microsoft for building Windows applications and web services.",
+    name: "postgres",
+    icon: postgres,
+    tip: "PostgreSQL is a powerful, open-source relational database system known for its reliability, performance, and advanced support for complex queries and data integrity.",
   },
   {
     name: "my sql",
     icon: mysql,
     tip: "MySQL is an open-source relational database management system used for storing and managing structured data.",
   },
-  {
-    name: "sql server",
-    icon: sqlserver,
-    tip: "SQL Server is a relational database management system developed by Microsoft for storing, managing, and retrieving structured data.",
-  },
+  // {
+  //   name: "sql server",
+  //   icon: sqlserver,
+  //   tip: "SQL Server is a relational database management system developed by Microsoft for storing, managing, and retrieving structured data.",
+  // },
 ];
 
-const experiences = [
+const experience = [
   {
     title: "Freelance Full Stack Web Developer",
-    image: sts,
+    image: upwork,
 
-    icon: astro,
+    icon: upworklogo,
     iconBg: "#EAE7E7",
     date: ["Upwork, Guru | Remote ", "2021 – Present"],
     points: [
-      "•	Delivered end-to-end web applications for international clients across real estate, SaaS, and   content platforms.",
-      "•	Specialized in React.js, Next.js, Tailwind CSS, Node.js, and PostgreSQL.",
-      "•	Maintained strong client satisfaction through clear communication, timely delivery, and high-quality code.",
-      "•	Built scalable frontends, designed APIs, and integrated third-party services.",
+      "Delivered end-to-end web applications for international clients across real estate, SaaS, and   content platforms.",
+      "Specialized in React.js, Next.js, Tailwind CSS, Node.js, and PostgreSQL.",
+      "Maintained strong client satisfaction through clear communication, timely delivery, and high-quality code.",
+      "Built scalable frontends, designed APIs, and integrated third-party services.",
     ],
   },
   {
     title: "Next.js Developer (Remote)",
-    image: gisto,
+    image: allen,
 
-    icon: graphql,
+    icon: nextjs,
     iconBg: "#242323",
     date: ["Void Zero Technologies, Islamabad", "May 2024 – March 2025"],
     points: [
-      "•	Developed pixel-perfect, responsive user interfaces using Next.js, React, and Tailwind CSS based on Figma designs.",
-      "•	Implemented Redux-based state management to improve application scalability and performance.",
-      "•	Collaborated with cross-functional remote teams to deliver features for a large-scale real estate and mortgage platform.",
-      "•	Conducted code reviews and mentored junior developers, improving overall code quality and team efficiency.",
-      "•	Contributed to a production platform managing real estate listings, property management, mortgages, and insurance.",
+      "Developed pixel-perfect, responsive user interfaces using Next.js, React, and Tailwind CSS based on Figma designs.",
+      "Implemented Redux-based state management to improve application scalability and performance.",
+      "Collaborated with cross-functional remote teams to deliver features for a large-scale real estate and mortgage platform.",
+      "Conducted code reviews and mentored junior developers, improving overall code quality and team efficiency.",
+      "Contributed to a production platform managing real estate listings, property management, mortgages, and insurance.",
     ],
   },
 ];
@@ -314,4 +318,4 @@ const projects = [
       "My portfolio website is a visually elegant platform highlighting my educational background, skillset, and professional experience. Constructed with React.js and enhanced by Tailwind CSS, it offers striking user interfaces. Framer Motion adds fluid and interactive web animations to create an engaging user experience.",
   },
 ];
-export { services, technologies, projects, experiences };
+export { services, technologies, projects, experience };
